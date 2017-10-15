@@ -1,13 +1,17 @@
+
+
 body, html {
   margin: 0;
   width: 100%;
   position: absolute;
   overflow-x: hidden;
+  background-image: url("../img/bg.jpg");
+
 }
 
 img {
   width: 100% !important;
-  height: 100% !important;
+  /*height: 100% !important;*/
 }
 
 figure {
@@ -26,7 +30,6 @@ body {
 /*HOME*/
 
 #home{
-  background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -55,22 +58,35 @@ body #navheader a:hover::after{
   width: 100%;
 }
 body #header {
-  padding-top: 20%;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   color: white;
 }
-body #header h1{
-  font-weight: bold;
+body #header .logoBus{
+  width: 30%;
 }
 
 
 /*sub page*/
+@font-face {
+  font-family: "cool";
+  src:url("../img/N_E_B.TTF");
+}
+.auCoin{
+  color: white;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
 .subPage{
-  background-color: rgba(85, 173, 211);
+  font-family: "cool";
+  color: white;
+  background-color:rgba(237, 125, 49,0.9);
   padding-top: 90px;
+  /*padding-bottom: 80px !important;*/
+  /*overflow: auto;*/
 }
 .subPage h2{
   text-align: center;
@@ -85,19 +101,38 @@ body #header h1{
   color: red;
   left: 50%;
   top: 50%;
-  font-size: 60px;
+  font-size: 50px;
 }
-.subPage .carte .artisan5,.subPage .carte .artisan2,.subPage .carte .artisan3{
+.thumb-tack{
   transform: rotate(15deg);
 }
-.subPage .carte .artisan1,.subPage .carte .artisan4{
-  transform: rotate(-15deg);
+
+
+/*PROFIL*/
+.artisanPhoto{
+  border-radius: 100PX;
+  overflow: hidden;
+}
+.artisanPhoto img{
+  border-radius: 100PX;
+  overflow: hidden;
+}
+.subPage .carte .artisan1:hover .profil{
+  padding-top: 20px;
+  width: 500px;
+  opacity: 1;
+  overflow: hidden;
+}
+.subPage .carte i .profil p{
+  font-size: 16px;
+}
+.subPage .carte i .profil .presentation{
 }
 .subPage .carte .artisan{
   font-size: 40px  ;
   color: #2A69B0;
+  font-size: 90px;
 }
-
 .subPage .carte .artisan1{
   left: 20%;
   top: 60%;
@@ -126,27 +161,36 @@ body #header h1{
   top: -200%;
   width: 0;
   transition: 0.5s;
-  transform: rotate(15deg);
   overflow: hidden;
   border: 1px solid #2A69B0;
   border-radius: 15px 15px 15px 0;
   opacity: 0;
 }
-.subPage .carte .artisan1:hover .profil{
-  width: 300px;
-  opacity: 1;
 
-}
 
+
+/*CARTE*/
 .subPage iframe{
-  width: 100%;
+  width: 90%;
+  padding-left: 40px;
 }
 .subPage .filtre ul{
   list-style-type: none;
+  padding: 0;
 }
 .subPage .filtre ul li{
   padding-top: 20px;
 }
 .subPage .filtre span{
   font-weight: bold;
+  font-size: 24px;
+}
+select{
+  margin-top: 15px;
+}
+
+/*FILTRE*/
+.bijoux{
+  cursor: pointer;
+
 }
