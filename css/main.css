@@ -107,17 +107,12 @@ textarea {
 #pres_artisan {
   width: 70vw;
   margin: auto;
-  /*height: 100px;*/
 }
 
 #pres_artisan > div {
-  border: 1px solid red;
-  border: none;
-
 }
 
 #pres_artisan h4 {
-  border: 1px solid red;
 }
 
 #pres_artisan figure {
@@ -131,14 +126,133 @@ textarea {
   width: 70%;
 }
 
+#pres_artisan .prez_artisan {
+  border: none;
+}
+
 #pres_artisan .prez_artisan img{
   max-width: 20%;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 4px solid rgb(237,125,49);
 }
 
-#pres_artisan * {
-  /*border: 1px solid red;*/
+.prez_artisan .card-header {
+  border-top-right-radius: 20px!important;
+  border-top-left-radius: 20px!important;
+  font-weight: bolder;
+  background-color: rgba(237,125,49, 0.8);
+  color: white;
+}
+
+.prez_artisan .card-footer {
+  border-bottom-right-radius: 20px!important;
+  border-bottom-left-radius: 20px!important;
+  color: white;
+  height: 35px;
+  position: relative;
+  font-size: 12px;
+}
+
+.prez_artisan .card-body {
+  padding-top: 20px;
+  background-color: rgba(22,147,165, 1);
+  color: white;
+  border-top: 3px solid white;
+}
+
+.prez_artisan .card-body h4 {
+  font-size: 3em;
+  font-family: 'Allura', cursive;
+}
+
+#pres_artisan .prez_artisan {
+  font-size: 18px!important;
+}
+
+#pres_artisan .prez_artisan blockquote {
+  font-style: italic;
+  line-height: 30px;
+  width: 120%;
+  margin-left: -30%;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 4px solid white;
+  font-size: 1.3em;
+  position: relative;
+  text-align: center;
+}
+
+#pres_artisan .prez_artisan blockquote::before {
+  content: ' «';
+  font-family: 'Allura';
+  position: relative;
+  top: 10px;
+  font-size: 5.5em;
+
+}
+
+.card {
+  /*margin-bottom: 0;*/
+}
+
+.produits h3 {
+  text-align: center;
+  margin-top: 50px!important;
+  width: 50%;
+  margin: auto;
+  color : rgb(237,125,49);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid rgb(237,125,49);
+}
+
+
+.carte_prod {
+  display: flex;
+  justify-content: space-between;
+  margin-top : 30px;
+  align-items: flex-end;
+  margin-bottom: 0px!important;
+}
+
+.carte_prod a {
+  color: inherit;
+}
+
+.carte_prod i:first-child {
+  margin-left: 30px;
+}
+
+.carte_prod i {
+  margin-bottom: 10px;
+}
+.carte_prod button {
+  padding: 10px 20px;
+  border: none;
+  margin: -10px 0 0 0;
+}
+
+.carte_prod button:hover {
+  background-color: rgb(22,147,165);
+  color: white;
+  transition: 1s;
+}
+
+h4 {
+  text-align: center!important;
+  color: rgb(237,125,49)!important;
+  margin-top: 20px!important;
+}
+
+.card-text {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+.fa-heart:hover {
+  color: red;
+  transition: 0,3s;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
