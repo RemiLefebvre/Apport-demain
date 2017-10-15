@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   width: 100%;
   position: absolute;
-
+  overflow-x: hidden;
 }
 
 img {
@@ -15,13 +15,22 @@ figure {
 }
 
 body {
-  background-image: url("../img/bgHeader.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
-#header{
-  position: fixed;
+
+.page{
+  height: 100vh;
+  width: 100vw;
 }
+/*HOME*/
+
+#home{
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 body #navheader{
   background-color: rgba(35,35,35,0.5);
   position: fixed;
@@ -31,7 +40,6 @@ body #navheader{
 }
 body #navheader a{
   color: white;
-  position: relative;
 }
 body #navheader a::after{
   content:'';
@@ -47,39 +55,98 @@ body #navheader a:hover::after{
   width: 100%;
 }
 body #header {
+  padding-top: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   height: 100vh;
   color: white;
 }
-body #header h1 {
-  margin: auto;
+body #header h1{
+  font-weight: bold;
+}
+
+
+/*sub page*/
+.subPage{
+  background-color: rgba(85, 173, 211);
+  padding-top: 90px;
+}
+.subPage h2{
   text-align: center;
   font-weight: bold;
-  color: white;
-  text-shadow: 0px 0px 90px black;
-  font-size: 12vw;
-  font-family: 'Satisfy', cursive;
 }
-body #header input {
-  padding: 10px;
-  border: none;
-  margin: auto;
+.subPage .carte{
   position: relative;
-  margin-bottom: 50px;
-  background-color: #27AE61;
-  transition: 0.2s;
 }
-body #header input:hover {
-  background-color: #006B14;
+.subPage .carte i{
+  text-shadow: 0 0 2px grey;
+  position: absolute;
+  color: red;
+  left: 50%;
+  top: 50%;
+  font-size: 60px;
+}
+.subPage .carte .artisan5,.subPage .carte .artisan2,.subPage .carte .artisan3{
+  transform: rotate(15deg);
+}
+.subPage .carte .artisan1,.subPage .carte .artisan4{
+  transform: rotate(-15deg);
+}
+.subPage .carte .artisan{
+  font-size: 40px  ;
+  color: #2A69B0;
 }
 
+.subPage .carte .artisan1{
+  left: 20%;
+  top: 60%;
+}
+.subPage .carte .artisan2{
+  left: 30%;
+  top: 25%;
+}
+.subPage .carte .artisan3{
+  left: 55%;
+  top: 63%;
+}
+.subPage .carte .artisan4{
+  left: 70%;
+  top: 45%;
+}
+.subPage .carte .artisan5{
+  left: 75%;
+  top: 22%;
+}
+.subPage .carte i .profil{
+  position: absolute;
+  z-index: 40;
+  background-color: white;
+  left: 100%;
+  top: -200%;
+  width: 0;
+  transition: 0.5s;
+  transform: rotate(15deg);
+  overflow: hidden;
+  border: 1px solid #2A69B0;
+  border-radius: 15px 15px 15px 0;
+  opacity: 0;
+}
+.subPage .carte .artisan1:hover .profil{
+  width: 300px;
+  opacity: 1;
 
+}
 
-/*HOME*/
-#home{
-  height: 100vh;
-  width: 100vw;
-  background-color: grey;
+.subPage iframe{
+  width: 100%;
+}
+.subPage .filtre ul{
+  list-style-type: none;
+}
+.subPage .filtre ul li{
+  padding-top: 20px;
+}
+.subPage .filtre span{
+  font-weight: bold;
 }

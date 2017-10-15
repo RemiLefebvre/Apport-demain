@@ -1,72 +1,190 @@
 <!doctype html>
 <html class="no-js" lang="FR">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" href="favicon.ico">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/4d141429f4.js"></script>
 
-    </head>
 
-    <body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-      <section id="home">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-      </section>
-      <header id="header" class="">
-        <nav id="navheader" class="navbar navbar-toggleable-md navbar-light bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+</head>
+
+<body>
+
+
+
+  <section class="page" id="home">
+    <header>
+      <nav id="navheader" class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <h2><strong><a class="navbar-brand ml-1 navbar-brand" href="index.php">Apporté demain</a></strong></h2>
+
+        <div class="collapse navbar-collapse " id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?addChild=true.php">Les des artisans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?modifChild=list">Produits </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?modifProfil=true">Evenements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?deconnexion=true">Le bus</a>
+            </li>
+            <li class="nav-item push-right">
+              <a class="nav-link" href="index.php?connexion=creer">Créer un compte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?connexion=connexion">Connexion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="header">
+      <h1>Apporté demain</h1>
+      <br>
+      <figure class="logoBus">
+        <img src="" alt="logo">
+      </figure>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+
+  </section>
+
+
+
+  <!-- CARTE -->
+  <section class="subPage page">
+    <h2>Au coin de votre rue</h2>
+<div class="row">
+  <div class="carte col-md-9">
+
+    <i class="fa fa-map-marker here" aria-hidden="true"></i>
+    <i class="fa fa-thumb-tack artisan1 artisan" aria-hidden="true">
+      <div class="card profil">
+        <figure class="">
+          <img src="" alt="">
+        </figure>
+        <p>AAAAAAAH oui</p>
+      </div>
+    </i>
+    <i class="fa fa-thumb-tack artisan2 artisan" aria-hidden="true"></i>
+    <i class="fa fa-thumb-tack artisan3 artisan" aria-hidden="true"></i>
+    <i class="fa fa-thumb-tack artisan4 artisan" aria-hidden="true"></i>
+    <i class="fa fa-thumb-tack artisan5 artisan" aria-hidden="true"></i>
+
+    <iframe class""  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80985.04301799936!2d2.9771203846049152!3d50.631155397446555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1508062174646"
+    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <div class="col-md-3 filtre">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <span>Produit</span><br>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            -- Choisir --
           </button>
-
-          <h2><strong><a class="navbar-brand ml-1 navbar-brand" href="index.php">Le Plaisir d'Adopter</a></strong></h2>
-
-          <div class="collapse navbar-collapse " id="navbarText">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?addChild=true.php">Les des artisans</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?modifChild=list">Produits </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?modifProfil=true">Evenements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?deconnexion=true">Le bus</a>
-              </li>
-              <li class="nav-item push-right">
-                <a class="nav-link" href="index.php?connexion=creer">Créer un compte</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.php?connexion=connexion">Connexion</a>
-              </li>
-            </ul>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </nav>
-      </header>
-      <section>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Artisant</span><br>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            -- Choisir --
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Rayon en km</span><br>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            -- Choisir --
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Produit</span><br>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            -- Choisir --
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Produit</span><br>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            -- Choisir --
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-      </section>
+</div>
+  </section>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+
+
+  <script type="text/javascript">
+    $('.artisan').click(function(){
+      $(".profil").slideUp();
+    });
+  </script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
 
@@ -100,6 +218,6 @@
         $('[data-toggle="popover"]').popover()
       })
       </script>
+</body>
 
-    </body>
 </html>
