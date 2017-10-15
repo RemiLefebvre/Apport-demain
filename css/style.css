@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+
+}
+
+img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/bgHeader.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#header{
+  position: fixed;
+}
+body #navheader{
+  background-color: rgba(35,35,35,0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 0 16px;
+}
+body #navheader a{
+  color: white;
+  position: relative;
+}
+body #navheader a::after{
+  content:'';
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: 0.2s;
+}
+body #navheader a:hover::after{
+  width: 100%;
+}
+body #header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+body #header h1 {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 90px black;
+  font-size: 12vw;
+  font-family: 'Satisfy', cursive;
+}
+body #header input {
+  padding: 10px;
+  border: none;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+  background-color: #27AE61;
+  transition: 0.2s;
+}
+body #header input:hover {
+  background-color: #006B14;
+}
+
+
+
+/*HOME*/
+#home{
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+}
