@@ -100,10 +100,50 @@ textarea {
 
 
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* FARRAH PAGE PRESENTATION DE L'ARTISANT*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+#pres_artisan {
+  width: 70vw;
+  margin: auto;
+  /*height: 100px;*/
+}
 
+#pres_artisan > div {
+  border: 1px solid red;
+  border: none;
 
+}
 
+#pres_artisan h4 {
+  border: 1px solid red;
+}
+
+#pres_artisan figure {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pres_artisan figure figcaption {
+  /*border: 1px solid red;*/
+  text-align: justify;
+  width: 70%;
+}
+
+#pres_artisan .prez_artisan img{
+  max-width: 20%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+#pres_artisan * {
+  /*border: 1px solid red;*/
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* FIN partie de FARRAH */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 
